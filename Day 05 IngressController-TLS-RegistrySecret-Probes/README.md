@@ -1,6 +1,10 @@
 ![title-deploying-secure-kubernetes-ingress-with-ssl--yKaGY7MRR6OuKgx91mzOg-t2i_oA8oTZ2jrB9hh6dHFA](https://github.com/user-attachments/assets/145269ff-f908-41ff-ae3f-9d05facc67df)
 
 
+sudo certbot certonly --manual --preferred-challenges=dns \
+-d "*.abc.com" -d "abc.com" \
+--agree-tos --no-eff-email --email your-email@example.com \
+--server https://acme-v02.api.letsencrypt.org/directory
 
 # Kubernetes Ingress Controllers Setup
 
